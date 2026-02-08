@@ -5,21 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Salman Masood | Senior Software Engineer</title>
 
-  <!-- Font Awesome -->
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- THEME TOGGLE -->
 <button class="theme-toggle" onclick="toggleTheme()">
   <i class="fa-solid fa-circle-half-stroke"></i>
 </button>
 
 <!-- HERO -->
-<header class="hero">
+<header class="hero fade-in show">
   <img src="Images/salman.jpg" alt="Salman Masood" class="profile-img">
   <h1>Salman Masood</h1>
   <p class="hero-subtitle">Senior Software Engineer</p>
@@ -32,7 +32,10 @@
   </div>
 </header>
 
-<section>
+<main>
+
+<!-- ABOUT -->
+<section class="section slide-up">
   <h2>About Me</h2>
   <p>
     Senior Software Engineer with 8+ years of experience designing and building
@@ -43,7 +46,8 @@
   </p>
 </section>
 
-<section>
+<!-- TECH STACK -->
+<section class="section slide-up">
   <h2>Technology Stack</h2>
   <div class="tech-grid">
     <div class="tech"><i class="fa-brands fa-microsoft"></i>.NET / ASP.NET Core</div>
@@ -59,124 +63,113 @@
   </div>
 </section>
 
-<section>
+<!-- PROJECTS -->
+<section class="section slide-up">
   <h2>Key Projects</h2>
 
-  <div class="project">
-    <h3>🕌 Daleelo – Muslim Community Platform (Built 2009 | Worked in 2017)</h3>
+  <div class="project-card">
+    <h3>🕌 Daleelo – Muslim Community Platform</h3>
     <p>
-      Daleelo is a Muslim community platform offering services through a web
-      application and mobile apps (Android & iOS). The system was originally
-      built in 2009 and had evolved into a large legacy production platform
-      by the time I joined in 2017.
+      Daleelo is a Muslim community platform offering services through web
+      and mobile apps. Originally built in 2009, it had grown into a large
+      legacy production system by the time I joined in 2017.
     </p>
     <p>
-      I was responsible for maintaining and enhancing the web application
-      and all backend web services consumed by the mobile applications,
-      focusing on system stability, production support, and feature
-      enhancements while preserving backward compatibility.
+      I maintained and enhanced backend services and web applications
+      consumed by Android and iOS apps, focusing on stability and backward
+      compatibility.
     </p>
     <ul>
-      <li>Owned backend APIs serving web, Android, and iOS clients</li>
-      <li>Maintained and enhanced a legacy production web application</li>
-      <li>Ensured data consistency across multiple platforms</li>
-      <li>Resolved production issues and improved system reliability</li>
-      <li>Supported new features without impacting existing users</li>
+      <li>Owned backend APIs for web and mobile clients</li>
+      <li>Maintained a large legacy production system</li>
+      <li>Ensured data consistency across platforms</li>
+      <li>Resolved production issues and improved reliability</li>
+      <li>Delivered features without breaking existing users</li>
     </ul>
   </div>
 
-  <div class="project">
-    <h3>🚢 Vessel Data Automation & Analytics Platform (2019)</h3>
+  <div class="project-card">
+    <h3>🚢 Vessel Data Automation & Analytics Platform</h3>
     <p>
-      Designed an automated data ingestion system for a shipping company where
-      ship captains continued using Excel. Daily Excel files were emailed,
-      processed via Azure Logic Apps, validated through .NET APIs and stored
-      in Azure Blob Storage. Clean data was persisted into SQL Server and
-      exposed to Power BI dashboards.
+      Designed an automated data ingestion system for a shipping company
+      where ship captains continued using Excel files emailed daily.
     </p>
     <ul>
-      <li>Zero user resistance with 100% data adoption</li>
-      <li>Automated validation, success & failure handling</li>
-      <li>Enabled analytics for vessel performance</li>
+      <li>Azure Logic Apps for ingestion</li>
+      <li>.NET APIs for validation</li>
+      <li>Azure Blob Storage & SQL Server persistence</li>
+      <li>Power BI dashboards for analytics</li>
+      <li>Achieved 100% data adoption with zero user resistance</li>
     </ul>
   </div>
 
-  <div class="project">
-    <h3>🚦 RTCC – Real-Time Command & Control (2020)</h3>
+  <div class="project-card">
+    <h3>🚦 RTCC – Real-Time Command & Control</h3>
     <p>
-      High-throughput real-time system handling live data from static cameras,
-      dynamic cameras and moving units. Kafka streamed telemetry data, .NET
-      consumers processed events and SignalR delivered live updates to
-      React dashboards.
+      High-throughput real-time platform ingesting live data from cameras
+      and moving units using Kafka and SignalR.
     </p>
     <ul>
-      <li>Kafka-based event-driven architecture</li>
-      <li>Real-time vehicle and camera monitoring</li>
-      <li>Scalable solution for concurrent users</li>
+      <li>Kafka event-driven architecture</li>
+      <li>SignalR real-time dashboards</li>
+      <li>Scalable for concurrent operators</li>
     </ul>
   </div>
 
-  <div class="project">
-    <h3>🏢 Distributed Real Estate Platform – USA (2021)</h3>
+  <div class="project-card">
+    <h3>🏢 Distributed Real Estate Platform – USA</h3>
     <p>
       Backend engineer on a large US real estate platform built using
-      microservices architecture. Contributed to Search APIs and integrated
-      Redis cache to improve performance and scalability.
+      microservices architecture. Implemented Redis caching for performance.
     </p>
   </div>
 
-  <div class="project">
+  <div class="project-card">
     <h3>🧑‍💼 HRMS – Internal Enterprise System (Team Lead)</h3>
     <p>
-      Led backend development and modernized the system by migrating from
-      .NET Framework to .NET Core, upgrading servers and improving deployment
-      pipelines while adding new HR features.
+      Led backend modernization from .NET Framework to .NET Core,
+      improved deployments and introduced new HR modules.
     </p>
   </div>
 
-  <div class="project">
+  <div class="project-card">
     <h3>☎️ QPharma – USA Client</h3>
     <p>
-      Worked on AOC and call center integration applications, resolving
-      complex business logic and delivering critical reporting under
-      strict timelines.
+      Delivered AOC and call center integrations with complex reporting
+      and strict deadlines.
     </p>
   </div>
 
-  <div class="project">
+  <div class="project-card">
     <h3>🏥 Ministry of Health – Oman</h3>
     <p>
-      Currently contributing to multiple national healthcare systems for
-      DSC and DGPHE and designed an IT Tracking System to improve
-      operational efficiency and transparency.
+      Contributing to national healthcare platforms for DSC and DGPHE
+      and designed an IT Tracking System to improve transparency and efficiency.
     </p>
   </div>
-
 </section>
 
-<section>
+<!-- YOUTUBE -->
+<section class="section slide-up">
   <h2>YouTube Contribution</h2>
   <p>
     I run a technical YouTube channel <strong>Code with Salman</strong>,
-    sharing knowledge on .NET, backend architecture, real-time systems,
+    sharing content on .NET, backend architecture, real-time systems,
     Angular and React.
   </p>
-  <p>
-    🎥 <a href="https://www.youtube.com/@codewithsalman" target="_blank">
-      youtube.com/@codewithsalman
-    </a>
-  </p>
+  <a class="youtube-link"
+     href="https://www.youtube.com/@codewithsalman"
+     target="_blank">
+    <i class="fa-brands fa-youtube"></i> youtube.com/@codewithsalman
+  </a>
 </section>
+
+</main>
 
 <footer>
   <p>© 2026 Salman Masood</p>
 </footer>
 
-<script>
-function toggleTheme() {
-  document.body.classList.toggle("dark");
-}
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
